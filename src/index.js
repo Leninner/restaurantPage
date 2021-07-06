@@ -1,5 +1,3 @@
-console.log("TODO ESTÁ CHIDO");
+import doHeader from "./home.js";
 
-import hola from "./home.js";
-
-console.log(hola(2)); // 16
+doHeader();

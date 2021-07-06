@@ -1,4 +1,12 @@
 (() => {
     "use strict";
-    console.log("TODO ESTÁ CHIDO"), console.log(8 * 2);
+    const e = document.querySelector("#content");
+    !(function () {
+        let t = document.createElement("div");
+        (t.style.width = "150px"),
+            (t.style.height = "150px"),
+            (t.style.background = "red"),
+            t.classList.add("hello"),
+            e.appendChild(t);
+    })()();
 })();
