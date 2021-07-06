@@ -24,10 +24,13 @@ function doHeader(icon) {
     pOne.textContent = "Comida Tradicional";
     refItemOne.textContent = "Menú";
     refItemOne.href = "#menu";
+    refItemOne.setAttribute("id", "btnMenu");
     refItemTwo.textContent = "Reservaciones";
     refItemTwo.href = "#reservation";
-    refItemThree.textContent = "Contacto";
-    refItemThree.href = "#contact";
+    refItemTwo.setAttribute("id", "btnReservation");
+    refItemThree.textContent = "Inicio";
+    refItemThree.href = "#";
+    refItemThree.setAttribute("id", "btnInicio");
 
     // Añadir Estilos
 
@@ -39,7 +42,7 @@ function doHeader(icon) {
     itemOne.appendChild(refItemOne);
     itemTwo.appendChild(refItemTwo);
     itemThree.appendChild(refItemThree);
-    lista.append(itemOne, itemTwo, itemThree);
+    lista.append(itemThree, itemOne, itemTwo);
     hTitle.append(hOne, pOne);
     topTitle.append(img, hTitle);
     topMenu.appendChild(lista);
@@ -47,4 +50,33 @@ function doHeader(icon) {
     contenedor.appendChild(header);
 }
 
-export default doHeader;
+function doFooter() {
+    let footer = document.createElement("div"),
+        hFooter = document.createElement("h3"),
+        pFooter = document.createElement("p");
+
+    hFooter.textContent = "Leninner | Github";
+    pFooter.textContent = "DOM y Webpack";
+
+    footer.classList.add("footer");
+
+    footer.append(hFooter, pFooter);
+    contenedor.appendChild(footer);
+}
+
+function doBody(image) {
+    let divBody = document.createElement("div"),
+        imgMain = new Image(),
+        hImg = document.createElement("h1");
+
+    imgMain.src = image;
+    imgMain.alt = "Chinchulines";
+    hImg.textContent = "Los Mejores Chinchulines";
+
+    divBody.classList.add("mainBody");
+
+    divBody.append(hImg, imgMain);
+    contenedor.appendChild(divBody);
+}
+
+export { doHeader, doFooter, doBody };
