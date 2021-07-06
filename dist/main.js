@@ -1,12 +1,1 @@
-(() => {
-    "use strict";
-    const e = document.querySelector("#content");
-    !(function () {
-        let t = document.createElement("div");
-        (t.style.width = "150px"),
-            (t.style.height = "150px"),
-            (t.style.background = "red"),
-            t.classList.add("hello"),
-            e.appendChild(t);
-    })()();
-})();
+(()=>{"use strict";const e=document.querySelector("#content");!function(t){let n=document.createElement("div");n.style.width="150px",n.style.height="150px",n.style.background="green",n.classList.add("hello"),e.appendChild(n)}()})();

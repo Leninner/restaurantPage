@@ -1,3 +1,3 @@
 import doHeader from "./home.js";
 
-doHeader();
+doHeader("green");
