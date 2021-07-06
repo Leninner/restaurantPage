@@ -1,1 +1,1 @@
-(()=>{"use strict";const e=document.querySelector("#content");!function(t){let n=document.createElement("div");n.style.width="150px",n.style.height="150px",n.style.background="green",n.classList.add("hello"),e.appendChild(n)}()})();
+(()=>{"use strict";const e=document.querySelector("#content");!function(t){let n=document.createElement("div"),d=document.createElement("div");n.style.width="150px",n.style.height="150px",n.style.background="green",d.textContent="Leninnn",n.classList.add("hello"),n.appendChild(d),e.appendChild(n)}()})();
