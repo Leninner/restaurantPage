@@ -7,6 +7,7 @@
 #content {
     min-height: 100%;
     position: relative;
+    min-height: 100vh;
 }
 
 .header {
