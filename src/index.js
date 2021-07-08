@@ -4,6 +4,9 @@ import icon from "./Images/icon.png";
 import image from "./Images/main.jpg";
 import doMenu from "./menu.js";
 import doReservation from "./reservation.js";
+import comidaUno from "./Images/chinchu.jpg";
+import comidaDos from "./Images/caldo.jpg";
+import comidaTres from "./Images/Librillo.jpg";
 
 const contenedor = document.querySelector("#content");
 
@@ -35,5 +38,5 @@ btnReservation.addEventListener("click", () => {
 
 btnMenu.addEventListener("click", () => {
     borrar();
-    doMenu();
+    doMenu(comidaUno, comidaDos, comidaTres);
 });

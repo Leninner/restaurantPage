@@ -1,7 +1,5 @@
 const contenedor = document.querySelector("#content");
 
-function doReservation() {
-    alert(15 + 96);
-}
+function doReservation() {}
 
 export default doReservation;
