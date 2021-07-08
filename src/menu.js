@@ -51,12 +51,31 @@ function doMenu(comidaOne, comidaTwo, comidaThree) {
     // Botones
     bFirstFood.type = "button";
     bFirstFood.value = "Pedir";
+    bFirstFood.addEventListener("click", () => {
+        window.open(
+            "https://api.whatsapp.com/send?phone=593979424062&text=Hola,%20vi%20tu%20proyecto%20y%20se%20ve%20incre%C3%ADble!",
+            "_blank"
+        );
+    });
     bSecondFood.type = "button";
     bSecondFood.value = "Pedir";
+    bSecondFood.addEventListener("click", () => {
+        window.open(
+            "https://api.whatsapp.com/send?phone=593979424062&text=Hola,%20vi%20tu%20proyecto%20y%20se%20ve%20incre%C3%ADble!",
+            "_blank"
+        );
+    });
     bThirdFood.type = "button";
     bThirdFood.value = "Pedir";
+    bThirdFood.addEventListener("click", () => {
+        window.open(
+            "https://api.whatsapp.com/send?phone=593979424062&text=Hola,%20vi%20tu%20proyecto%20y%20se%20ve%20incre%C3%ADble!",
+            "_blank"
+        );
+    });
 
     //Diseños
+    divMenu.classList.add("divMenu");
     titleMenu.classList.add("titleMenu");
     firstFood.classList.add("firstFood");
     secondFood.classList.add("secondFood");

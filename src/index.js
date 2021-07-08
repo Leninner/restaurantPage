@@ -13,6 +13,10 @@ const contenedor = document.querySelector("#content");
 doHeader(icon);
 doFooter();
 
+window.addEventListener("DOMContentLoaded", function () {
+    doBody(image);
+});
+
 function borrar() {
     console.log(contenedor.childNodes);
     if (contenedor.childNodes[2]) {
